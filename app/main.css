@@ -1,0 +1,241 @@
+@charset "UTF-8";
+ table {
+     border-collapse: collapse;
+     margin: 2px;
+ }
+
+div {
+    margin: 2px;
+}
+
+table, th, td{
+    border: 1px solid #000000;
+}
+#wrapper {
+    width: 100%;
+    float: left;
+    padding-bottom:5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#wrapper.nopad {
+    padding-bottom:0px;
+}
+
+#logo {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+
+}
+
+a {
+    display: block;
+    color: WHITE;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: baseline;
+    float: left;
+}
+#mainmenu {
+    width: 430px;
+}
+
+#mainmenu li {
+    width: 200px;
+    line-height: 50px;
+}
+
+#mainmenu li a{
+    line-height: 50px;
+    width: 200px;
+}
+
+.left {
+    background-color:#0000CC;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-right: 10px;
+}
+
+.right {
+    background-color:#CC0000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: 10px;
+}
+
+#homeLink {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background-color: #6060FF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topRight: 5px;
+}
+
+#homeLink p {
+    font-size: 30px;
+    margin: 0px auto;
+}
+
+.search {
+    float: left;
+    width: 100%;
+
+}
+
+#searchbar {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    cursor: hand;
+}
+
+.search li {
+    width: 33%;
+}
+
+.search img {
+    height: 40px;
+}
+
+.search #arrow {
+    transform: rotate(0deg);
+}
+
+.search #logo {
+    float: right;
+    width: auto;
+    padding-right: 10px;
+}
+
+.search p {
+    margin: 0 auto;
+    vertical-align: baseline;
+    width: 190px;
+    font-size: 30px;
+}
+
+.search h2 {
+    margin: 0 auto;
+    width: 70px;
+}
+
+.search .mid {
+    border-left:1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+button {
+    cursor: hand;
+    margin: 5px;
+}
+
+.searchResult {
+    width:100%;
+    float:left;
+    border-top: 1px solid #000000;
+}
+
+.noSelect {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+.pageTitleWrapper {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #000000;
+}
+
+.pageTitle {
+    color: white;
+    width: 340px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    cursor: hand;
+    background-color: #CC0000;
+}
+
+#simSetup {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #000000;
+
+}
+
+#adjustPlayers {
+    width: 100%;
+    float: left;
+    /*border-right: 1px solid #000000; REMOVE UNLESS WE ADD OLD PLAYER FUNCTIONALITY*/
+}
+
+#goButtons {
+    width: 0%;
+    float: left;
+    display:none;
+}
+
+select {
+    margin: 5px 0px;
+}
+
+.floater {
+    float: left;
+    clear: both;
+}
+
+#theTeam {
+    float:left;
+}
+
+.resTable {
+    float:left;
+    border:1px solid #000000;
+}
+
+#simSeason {
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+#simResults {
+    float: left;
+    clear: both;
+}
