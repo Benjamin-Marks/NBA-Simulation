@@ -1,1 +1,9 @@
-*login.php
+#Bin files
+/Scraper/bin
+
+#Database Authentication info
+login.php
+
+#other hidden files from eclipse project
+.classpath
+.project

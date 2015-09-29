@@ -2,6 +2,20 @@
  * Created by ben on 4/28/15.
  */
 
+
+
+var counter = 0;
+var teamRanks = new Array(30); //Hack all the code together TODO: make this more elegant?
+var games = new Array(29); //TODO: Same as teamRanks
+//Teams are hard-coded in, TODO: Fix this at some point
+//Divisions are every 5 teams, conference is first/last 15
+var teams = ["TOR", "BOS", "BRK", "PHI", "NYK",
+    "CLE", "CHI", "MIL", "IND", "DET",
+    "ATL", "WAS", "MIA", "CHO", "ORL",
+    "POR", "OKC", "UTA", "DEN", "MIN",
+    "GSW", "LAC", "PHO", "SAC", "LAL",
+    "HOU", "MEM", "SAS", "DAL", "NOP"];
+
 /*
  * Source: http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
  * Fisher-Yates Shuffle
@@ -44,11 +58,6 @@ function getProb(prob) {
         return .99;
     }
 }
-
-var counter = 0;
-var teamRanks = new Array(30); //Hack all the code together TODO: make this more elegant?
-var games = new Array(29); //TODO: Same as teamRanks
-
 
 function finishSim() {
     //Replace each opponent listing with an array that is [team1, team2, team1score, team2score]
@@ -231,20 +240,10 @@ function finishSim() {
     document.getElementById("simtitle").setAttribute("style", "display: none");
 }
 
-
-//Teams are hard-coded in, TODO: Fix this at some point
-//Divisions are every 5 teams, conference is first/last 15
-var teams = ["TOR", "BOS", "BRK", "PHI", "NYK",
-    "CLE", "CHI", "MIL", "IND", "DET",
-    "ATL", "WAS", "MIA", "CHO", "ORL",
-    "POR", "OKC", "UTA", "DEN", "MIN",
-    "GSW", "LAC", "PHO", "SAC", "LAL",
-    "HOU", "MEM", "SAS", "DAL", "NOP"];
-
 function simulate() {
     console.log("entering Sim");
     /*
-     Each team have to play:
+     Each team has to play:
      4 games against the other 4 division opponents, [4x4=16 games]
      4 games against 6 (out-of-division) conference opponents, [4x6=24 games]
      3 games against the remaining 4 conference teams, [3x4=12 games]
