@@ -16,5 +16,5 @@ A project designed to simulate an NBA season. There are two componenets, a scrap
 * Simulates a season and displays team win-loss records as well as the scores of individual games
 * Allows you to adjust team composition, shift players to different teams and observe the effect
   * What would happen to the Heat if Lebron stayed in Miami?
-  * What if Steven Currey came to Cleveland?
+  * What if Steph Currey came to Cleveland?
   * What if every single starter left the Lakers?
